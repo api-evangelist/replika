@@ -1,7 +1,29 @@
 aid: replika
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/replika.png
 name: Replika
-description: Replika is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Replika is an AI companion mobile and web application built by Luka, Inc. that
+  lets people create a personalized conversational AI "friend" for chat, emotional
+  support, roleplay, voice calls, and augmented-reality companionship. The product
+  is a closed consumer experience delivered through iOS, Android, and a legacy web
+  app; it retains conversational memory and adapts its personality over time.
+  Replika does not publish a public developer API, SDKs, OpenAPI/AsyncAPI
+  specifications, webhooks, or an MCP server — all model behavior is applied
+  server-side and surfaced only through the first-party apps. This API Evangelist
+  profile therefore captures identity, legal, support, and domain-security signals
+  rather than an API contract. Replika was surfaced as a Y Combinator portfolio
+  company and enriched here as a company profile.
 url: https://raw.githubusercontent.com/api-evangelist/replika/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Artificial Intelligence
+- Chatbot
+- AI Companion
+- Consumer App
+- Conversational AI
+- Mobile
 apis: []
+common:
+- type: DomainSecurity
+  url: security/replika-domain-security.yml
+- type: LLMsTxt
+  url: llms/replika-llms.txt
+- type: WellKnown
+  url: well-known/replika-well-known.yml
+- type: Website
+  url: https://replika.com
+- type: Support
+  url: https://help.replika.com
+- type: TermsOfService
+  url: https://replika.com/legal/terms/en
+- type: PrivacyPolicy
+  url: https://replika.com/legal/privacy/en
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
